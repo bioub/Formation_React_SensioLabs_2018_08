@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import uuid from 'uuid';
-import {TodoItem} from './TodoItem';
+import { TodoItem } from './TodoItem';
 
 class TodoList extends PureComponent {
 

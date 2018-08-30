@@ -1,7 +1,6 @@
 import React from 'react';
-// import './TodoItem.css';
-
 import styled from 'styled-components';
+// import './TodoItem.css';
 
 const TodoListStyle = styled.div`
   background: lightblue;

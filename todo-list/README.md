@@ -20,7 +20,7 @@ Ajouter en preloaded state le state ci-dessus.
 
 Créer un reducer qui retourne le state reçu en entrée.
 
-### 2 - Créer des versions connectées de TodoAdd et TodoList
+### 2 - Créer des versions connectées de TodoForm et TodoList
 
 Avec mapStateToProps afficher dans chaque composants les éléments du state (faire la selection via des sélecteurs)
 
@@ -30,4 +30,4 @@ Avec mapStateToProps afficher dans chaque composants les éléments du state (fa
 
 ### 5 - Créer 2 actions creators
 
-### 6 - Connecter TodoAdd avec mapDispatchToProps
+### 6 - Connecter TodoForm avec mapDispatchToProps

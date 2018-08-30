@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { TodoList } from './TodoList';
-import {TodoForm} from "./TodoForm";
+import { TodoForm } from './TodoForm';
 
 class App extends Component {
 
@@ -17,8 +17,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <TodoForm onNewTodo={this.onNewTodoHandler} />
-        <TodoList todos={this.state.todos} />
+        <TodoForm onNewTodo={this.onNewTodoHandler}/>
+        <TodoList todos={this.state.todos}/>
       </div>
     );
   }
