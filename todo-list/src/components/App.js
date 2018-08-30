@@ -10,7 +10,7 @@ class App extends Component {
 
   onNewTodoHandler = (newTodo) => {
     this.setState({
-      todos: [...this.state.todos, newTodo],
+      todos: [newTodo, ...this.state.todos],
     });
   };
 

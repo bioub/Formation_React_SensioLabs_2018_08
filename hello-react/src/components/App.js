@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Hello } from './Hello';
-import { Clock } from './Clock';
-import { ButtonCountable } from './ButtonCountable';
-import {FormContact} from "./FormContact";
-import {ContainerPrenom} from "./ContainerPrenom";
+import { Clock, ClockDesactivable } from './Clock';
+import { ButtonCountable, ButtonCountableDesactivable } from './ButtonCountable';
+import { FormContact } from './FormContact';
+import { ContainerPrenom } from './ContainerPrenom';
 
 class App extends Component {
   render() {
@@ -19,9 +19,13 @@ class App extends Component {
         <FormContact/>
         <hr />
         <ContainerPrenom/>
+        <hr />
+        <ClockDesactivable/>
+        <hr />
+        <ButtonCountableDesactivable/>
       </div>
     );
   }
 }
 
-export default App;
+export { App };

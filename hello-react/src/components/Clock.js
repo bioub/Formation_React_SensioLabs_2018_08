@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {desactivable} from "../hocs/desactivable";
 
 class Clock extends Component {
 
@@ -30,6 +31,9 @@ class Clock extends Component {
   }
 }
 
+const ClockDesactivable = desactivable(Clock);
+
 export {
   Clock,
+  ClockDesactivable,
 };

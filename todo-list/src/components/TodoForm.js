@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { TodoList } from './TodoList';
 
 class TodoForm extends Component {
 

@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import uuid from 'uuid';
-import { TodoItem } from './TodoItem';
+import {TodoItem} from './TodoItem';
 
-const TodoList = ({todos}) => {
+class TodoList extends PureComponent {
 
-  const items = todos.map((todo, i) => <TodoItem key={uuid()} todo={todo}/>);
+  /*
+  shouldComponentUpdate(nextProps) {
+    return nextProps.todos !== this.props.todos;
+  }
+  */
 
-  return (
-    <div>
-      {items}
-    </div>
-  )
-};
+  render() {
+    console.log('render TodoList');
+    const {todos} = this.props;
+
+    const items = todos.map((todo, i) => <TodoItem key={uuid()} todo={todo}/>);
+
+    return (
+      <div>
+        {items}
+      </div>
+    );
+  }
+}
 
 export {
   TodoList,

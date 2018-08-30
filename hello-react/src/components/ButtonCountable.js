@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {desactivable} from "../hocs/desactivable";
 
 class ButtonCountable extends Component {
 
@@ -38,6 +39,9 @@ class ButtonCountable extends Component {
 
 }
 
+const ButtonCountableDesactivable = desactivable(ButtonCountable);
+
 export {
   ButtonCountable,
+  ButtonCountableDesactivable,
 };
